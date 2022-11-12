@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendence App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Sign In Form  -->
+    <div id="main-container">
+      <form id="form" action="JavaScript:void(0)">
+        <h1>Sign In</h1>
+        <div class="inp-field">
+          <div class="input-field">
+            <label>UserName</label>
+            <input
+              type="text"
+              placeholder="Enter UserName"
+              id="user-value"
+              onChange="onUserChange()"
+              onBlur="onUserBlur()"
+            />
+            <p id="valid">*Please provide valid Email</p>
+            <p id="user-error">*This field is Required</p>
+          </div>
+          <div class="input-field">
+            <label>Password</label>
+            <input
+              type="text"
+              placeholder="Enter Password"
+              id="pass-value"
+              onChange="onPassChange()"
+              onBlur="onPassBlur()"
+            />
+            <p id="invalid-error">*Password is of 11 characters</p>
+            <p id="pass-error">*This field is Required</p>
+          </div>
+          <p id="error">*Invalid Username or Password</p>
+        </div>
+        <button type="submit" id="login" class="btn">Log In</button>
+      </form>
+    </div>
+    <script src="/Firebase/firebase.js" type="module"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
