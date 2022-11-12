@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Add Students</title>
+  </head>
+  <body>
+    <a href="#" class="modalButton" data-popup="popupOne">Model Popup</a>
+
+<section class="modal modalWindow" id="popupOne">  
+	<section class="modalWrapper">
+		<h2>Modal Popup </h2>
+		<p></p>
+		
+	</section>
+	<a class="closeBtn">CLOSE X</a>
+</section>
+<section class="modal overlay"></div>
+
+    <!-- HTML FOR FIRST FORM -->
+    <div id="container">
+      <header>Add Students</header>
+
+      <form action="JavaScript:void(0)">
+        <div class="first-form">
+          <div class="personal-details">
+            <span class="title">Personal Details</span>
+
+            <div class="fields">
+              <div class="input-fields">
+                <label> Student Name</label>
+                <input
+                  type="text"
+                  id="user-name"
+                  placeholder="Enter UserName"
+
+                />
+                <!-- <p id="user-para">*This field is Required</p>
+                            <p id="email-length">*Please Provide Valid UserName of 10 alphabets </p> -->
+              </div>
+
+              <div class="input-fields">
+                <label>Father Name</label>
+                <input
+                  id="father-name"
+                  type="text"
+                  placeholder="Enter Father Name"
+                />
+                <!-- <p id="email-para">*This field is Required</p>
+                            <p id="email-valid">*Please Provide Valid Email</p> -->
+              </div>
+
+              <div class="input-fields">
+                <label>Roll Number</label>
+                <input
+                  type="text"
+                  placeholder="Enter Roll Number"
+                  id="roll-num"
+                />
+                <!-- <p id="pass-para">*This field is Required</p>
+                            <p id="pass">*Password must be of 8 characters</pid> -->
+              </div>
+              <div class="input-fields">
+                <label>Class Instructor</label>
+                <input
+                  type="text"
+                  placeholder="Enter Class Instructor"
+                  id="teacher"
+                />
+                <!-- <p id="num-para">*This field is Required</p>
+                            <p id="num-length">*The Number must be of 11 numbers</p> -->
+              </div>
+              <div class="input-fields">
+                <label>Class Timings</label>
+                <input
+                  type="text"
+                  placeholder="Enter Timings"
+                  id="timing"
+                />
+                <!-- <p id="num-para">*This field is Required</p>
+                            <p id="num-length">*The Number must be of 11 numbers</p> -->
+              </div>
+              <div class="input-fields">
+                <label>Phone Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter Phone Number"
+                  id="number"
+                />
+                <!-- <p id="num-para">*This field is Required</p>
+                            <p id="num-length">*The Number must be of 11 numbers</p> -->
+              </div>
+            </div>
+
+            <button class="btn" id="button">
+              <span id="btn-text" class="btnText">Submit</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="../Firebase/firebase.js" type="modular"></script>
+  <script src="form.js"></script>
+</html>

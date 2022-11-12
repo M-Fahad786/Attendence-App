@@ -27,7 +27,7 @@ const onUserBlur = () => {
 const onPassBlur = () => {
   let password = document.getElementById("pass-value");
   let invalid_pass = document.getElementById("invalid-error");
-  if (password.value.length >= 10) {
+  if (password.value.length >=8) {
     invalid_pass.style.display = "none";
   } else {
     invalid_pass.style.display = "block";

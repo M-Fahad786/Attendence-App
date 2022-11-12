@@ -5,22 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DashBoard</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <ul>
-          <li>
-            <a href="#" class="logo">
-              <img
-                src="https://w7.pngwing.com/pngs/502/794/png-transparent-white-arrow-going-up-computer-icons-dashboard-car-symbol-dashboard-icon-miscellaneous-angle-logo.png"
-                alt=""
-              />
-              <span class="item">DashBoard</span>
-            </a>
-          </li>
-        </ul>
+    <!-- Navbar -->
+    <header>
+      <!-- Logo  -->
+      <a href="#" class="logo">Attendence</a>
+
+      <!-- List Items  -->
+      <nav class="nav">
+        <a href="#" class="active">DashBoard</a>
       </nav>
-    </div>
+
+      <!-- Icons -->
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search"></i>
+        <a href="#">Log Out</a>
+      </div>
+    </header>
+
+    <section class="dashboard">
+      <div class="top">
+        <i class="uil uil-bars sidebar-toggle"></i>
+
+        <div class="search-box">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+
+        <!--<img src="images/profile.jpg" alt="">-->
+      </div>
+
+      <div class="dash-content">
+        <div class="overview">
+          <div class="boxes">
+            <div class="box box1">
+              <i class="uil uil-thumbs-up"></i>
+              <span class="text" id="btn">Add Student </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Font Awesome Link  -->
+    <script
+      src="https://kit.fontawesome.com/9b89a40925.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
